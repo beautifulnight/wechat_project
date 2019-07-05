@@ -1,0 +1,60 @@
+/* pages/info/info.wxss */
+
+.baseinfo {
+  color: rgb(116, 110, 110);
+  position: relative;
+  left: 15px;
+  top: 10px;
+  font-size: 15px;
+}
+
+.basecell {
+  position: relative;
+  top: 10px;
+}
+
+.otherinfo {
+  color: rgb(116, 110, 110);
+  position: relative;
+  left: 15px;
+  top: 40px;
+  font-size: 15px;
+}
+
+.othercell {
+  position: relative;
+  top: 40px;
+}
+
+.btn {
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+  position: relative;
+  top: 50px;
+}
+
+.img {
+  flex: 1;
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+}
+
+.btn2 {
+  position: relative;
+  top: 5rpx;
+}
+
+.imgarea {
+  overflow: hidden;
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  margin-top: 50rpx;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}

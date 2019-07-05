@@ -1,0 +1,10 @@
+<!--pages/myorder/myorder.wxml-->
+<van-cell-group>
+<van-cell title="当前预定信息：" size="large" icon="https://image.flaticon.com/icons/svg/874/874928.svg"/>
+  <van-cell title="预定教室" value="{{myclass}}" icon="https://image.flaticon.com/icons/svg/874/874959.svg" border="{{ false }}"/>
+  <van-cell title="座位号" value="{{myseat}}" icon="https://image.flaticon.com/icons/svg/874/874923.svg" border="{{ false }}"/>
+  <van-cell title="起始时间" value="{{mystart}}" icon="https://image.flaticon.com/icons/svg/874/874957.svg" border="{{ false }}"/>
+  <van-cell title="结束时间" value="{{myend}}" icon="https://image.flaticon.com/icons/svg/874/874917.svg" border="{{ false }}"/>
+</van-cell-group>
+<van-button plain size="large" type="info" bindtap="cancel">取消预定</van-button>
+<van-dialog id="van-dialog" overlay />

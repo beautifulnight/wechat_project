@@ -1,0 +1,16 @@
+<!--pages/forget2/forger2.wxml-->
+<view class='container'>
+  <van-steps steps="{{ steps }}" active="2" active-color="#418ef3"/>
+  <view class='area'>
+    <text >输入新密码</text>
+    <view class="van-hairline--bottom">
+      <van-field title-width='0px' value="{{ value1 }}" placeholder="请输入新密码" border="{{ false }}" bind:change="onChange1" />
+    </view>
+    <view class="van-hairline--bottom">
+      <van-field title-width='0px' value="{{ value2 }}" placeholder="再次确认密码" border="{{ false }}" bind:change="onChange2" />
+    </view>
+  </view>
+</view>
+<view class='btn'>
+  <van-button type="info" size='large' bindtap="finish">完成</van-button>
+</view>

@@ -1,0 +1,18 @@
+<head>
+</head>
+<form bind:submit="formSubmit">
+  <van-cell-group>
+    <van-field name="nickname" left-icon="smile-o" label="昵称：" placeholder="请输入昵称" border="{{ true }}" bind:input="nickNameInput" focus="true" />
+    <van-field required error="{{username_error}}" name="username" left-icon="contact" label="用户名：" placeholder="请输入用户名" border="{{ true }}" bind:input="userNameInput" bind:blur='userNameOnblur'/>
+    <van-field required error="{{password_error}}" name="password" password="{{switch_psw}}" left-icon="eye-o" right-icon="closed-eye" label="密码：" placeholder="请输入密码" border="{{ true }}" bind:input="passwordInput" bind:click-icon="swtich_p" />
+    <van-field required error="{{email_error}}" name="email" left-icon="envelop-o" label="邮箱账号：" placeholder="请输入邮箱账号" border="{{ true }}" bind:input="emailInput" />
+    <van-field required disabled left-icon="description" right-icon="arrow-down" label="密保问题：" placeholder="{{que}}" border="{{ true }}" bind:click-icon="choose_q" />
+    <van-field required name="answer" left-icon="records" label="密保答案：" placeholder="请输入问题答案" border="{{ true }}" error="{{answer_error}}" bind:input='answerInput'/>
+  </van-cell-group>
+  <van-popup show="{{ show }}" position="top" bind:close="onClose">
+    <van-picker columns="{{ columns }}" bind:change="onChange" show-toolbar bind:cancel="onCancel" bind:confirm="onConfirm" />
+  </van-popup>
+
+  <button class="button-hover" plain type="primary" size="large" form-type='submit'>确定</button>
+  <van-button plain type="default" size="large" bindtap="backBtn">返回</van-button>
+</form>

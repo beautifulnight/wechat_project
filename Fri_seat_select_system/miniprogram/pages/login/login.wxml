@@ -1,0 +1,24 @@
+<!--pages/login/login.wxml-->
+<view class="container_login">
+  <view class='picarea' style='background-image:url("{{url_bg}}")'>
+    
+  </view>
+  <form bind:submit="login">
+    <view class='buttonarea'>
+      <view class='button'>
+        <van-cell-group>
+          <van-field name="username" clearable label="用户名" left-icon="smile-o" placeholder="请输入用户名" bind:click-icon="onClickIcon" bind:input="userNameInput" />
+          <van-field name="password" password="{{switch_psw}}" label="密码" left-icon="eye-o" icon="closed-eye" placeholder="请输入密码" border="{{ false }}" bind:input="passwordInput"  bind:click-icon="swtich_p"/>
+        </van-cell-group>
+      </view>
+      <view class='button'>
+        <button class="b2" form-type='submit'>Login</button>
+      </view>
+      <view class="text">
+        <view class='forget' bindtap="forgetPassword">忘记密码</view>
+        <view class='adm' bindtap="userSwitchAdmin">管理员登陆</view>
+      </view>
+     
+    </view>
+  </form>
+</view>

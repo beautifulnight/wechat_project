@@ -1,0 +1,20 @@
+<view class="container index">
+<view class='picarea'>
+
+</view>
+  <view class='buttonarea'>
+    <view class='button login'>
+      <van-button 
+        plain size="large" 
+        type="info" 
+        bindtap="login_url">Login</van-button>
+    </view>
+    <text>or</text>
+    <view class='button register'>
+      <van-button
+       plain size="large" 
+       type="warning" 
+       bindtap="register_url">Register</van-button>
+    </view>
+  </view>
+</view>

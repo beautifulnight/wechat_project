@@ -1,0 +1,30 @@
+<!--pages/history/history.wxml-->
+<view class='container'>
+<view class='card'>
+<van-card
+ price="{{time1}}"
+  desc="{{seat1}}"
+  title="{{class1}}"
+  thumb="{{ imageURL1 }}"
+  currency=''
+/>
+</view>
+<view class='card'>
+<van-card
+  price="{{time2}}"
+  desc="{{seat2}}"
+  title="{{class2}}"
+  thumb="{{ imageURL2 }}"
+  currency=''
+/>
+</view>
+<view class='card'>
+<van-card
+  price="{{time3}}"
+  desc="{{seat3}}"
+  title="{{class3}}"
+  thumb="{{ imageURL3 }}"
+  currency=''
+/>
+</view>
+</view>

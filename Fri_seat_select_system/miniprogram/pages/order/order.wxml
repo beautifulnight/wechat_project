@@ -1,0 +1,218 @@
+<!--pages/order/order.wxml-->
+
+<van-row>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[0].if_ok }}" custom-class="block" name="fade-up" duration="500">
+      <van-icon size="2em" name="{{ seat[0].src }}" bind:click="onOrder1" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[1].if_ok }}" custom-class="block" name="fade-up" duration="500">
+      <van-icon size="2em" name="{{seat[1].src}}" bind:click="onOrder2" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[2].if_ok}}" custom-class="block" name="fade-up" duration="500">
+      <van-icon size="2em" name="{{seat[2].src}}" bind:click="onOrder3" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[3].if_ok}}" custom-class="block" name="fade-up" duration="500">
+      <van-icon size="2em" name="{{seat[3].src}}" bind:click="onOrder4" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[4].if_ok }}" custom-class="block" name="fade-up" duration="700">
+      <van-icon size="2em" name="{{seat[4].src}}" bind:click="onOrder5" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[5].if_ok }}" custom-class="block" name="fade-up" duration="700">
+      <van-icon size="2em" name="{{seat[5].src}}" bind:click="onOrder6" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[6].if_ok }}" custom-class="block" name="fade-up" duration="700">
+      <van-icon size="2em" name="{{seat[6].src}}" bind:click="onOrder7" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[7].if_ok }}" custom-class="block" name="fade-up" duration="700">
+      <van-icon size="2em" name="{{seat[7].src}}" bind:click="onOrder8" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[8].if_ok }}" custom-class="block" name="fade-up" duration="900">
+      <van-icon size="2em" name="{{seat[8].src}}" bind:click="onOrder9" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[9].if_ok }}" custom-class="block" name="fade-up" duration="900">
+      <van-icon id="1" size="2em" name="{{seat[9].src}}" bind:click="onOrder10" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[10].if_ok }}" custom-class="block" name="fade-up" duration="900">
+      <van-icon size="2em" name="{{seat[10].src}}" bind:click="onOrder11" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[11].if_ok }}" custom-class="block" name="fade-up" duration="900">
+      <van-icon size="2em" name="{{seat[11].src}}" bind:click="onOrder12" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[12].if_ok }}" custom-class="block" name="fade-up" duration="1100">
+      <van-icon size="2em" name="{{seat[12].src}}" bind:click="onOrder13" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[13].if_ok }}" custom-class="block" name="fade-up" duration="1100">
+      <van-icon size="2em" name="{{seat[13].src}}" bind:click="onOrder14" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[14].if_ok }}" custom-class="block" name="fade-up" duration="1100">
+      <van-icon size="2em" name="{{seat[14].src}}" bind:click="onOrder15" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[15].if_ok }}" custom-class="block" name="fade-up" duration="1100">
+      <van-icon size="2em" name="{{seat[15].src}}" bind:click="onOrder16" />
+    </van-transition>
+  </van-col>
+
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[16].if_ok }}" custom-class="block" name="fade-up" duration="1300">
+      <van-icon size="2em" name="{{seat[16].src}}" bind:click="onOrder17" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[17].if_ok }}" custom-class="block" name="fade-up" duration="1300">
+      <van-icon size="2em" name="{{seat[17].src}}" bind:click="onOrder18" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[18].if_ok }}" custom-class="block" name="fade-up" duration="1300">
+      <van-icon size="2em" name="{{seat[18].src}}" bind:click="onOrder19" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[19].if_ok }}" custom-class="block" name="fade-up" duration="1300">
+      <van-icon size="2em" name="{{seat[19].src}}" bind:click="onOrder20" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[20].if_ok }}" custom-class="block" name="fade-up" duration="1500">
+      <van-icon size="2em" name="{{seat[20].src}}" bind:click="onOrder21" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[21].if_ok }}" custom-class="block" name="fade-up" duration="1500">
+      <van-icon size="2em" name="{{seat[21].src }}" bind:click="onOrder22" />
+    </van-transition>
+  </van-col>
+
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[22].if_ok }}" custom-class="block" name="fade-up" duration="1500">
+      <van-icon size="2em" name="{{seat[22].src}}" bind:click="onOrder23" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[23].if_ok }}" custom-class="block" name="fade-up" duration="1500">
+      <van-icon size="2em" name="{{seat[23].src}}" bind:click="onOrder24" />
+    </van-transition>
+  </van-col>
+</van-row>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[24].if_ok }}" custom-class="block" name="fade-up" duration="1700">
+      <van-icon size="2em" name="{{seat[24].src}}" bind:click="onOrder25" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[25].if_ok }}" custom-class="block" name="fade-up" duration="1700">
+      <van-icon size="2em" name="{{seat[25].src}}" bind:click="onOrder26" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[26].if_ok }}" custom-class="block" name="fade-up" duration="1700">
+      <van-icon size="2em" name="{{seat[26].src}}" bind:click="onOrder27" />
+    </van-transition>
+  </van-col>
+
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[27].if_ok }}" custom-class="block" name="fade-up" duration="1700">
+      <van-icon size="2em" name="{{seat[27].src}}" bind:click="onOrder28" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[28].if_ok }}" custom-class="block" name="fade-up" duration="1900">
+      <van-icon size="2em" name="{{seat[28].src}}" bind:click="onOrder29" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[29].if_ok }}" custom-class="block" name="fade-up" duration="1900">
+      <van-icon size="2em" name="{{seat[29].src}}" bind:click="onOrder30" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[30].if_ok }}" custom-class="block" name="fade-up" duration="1900">
+      <van-icon size="2em" name="{{seat[30].src}}" bind:click="onOrder31" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[31].if_ok }}" custom-class="block" name="fade-up" duration="1900">
+      <van-icon size="2em" name="{{seat[31].src}}" bind:click="onOrder32" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[32].if_ok }}" custom-class="block" name="fade-up" duration="2100">
+      <van-icon size="2em" name="{{seat[32].src}}" bind:click="onOrder33" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[33].if_ok }}" custom-class="block" name="fade-up" duration="2100">
+      <van-icon size="2em" name="{{seat[33].src}}" bind:click="onOrder34" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[34].if_ok }}" custom-class="block" name="fade-up" duration="2100">
+      <van-icon size="2em" name="{{seat[34].src}}" bind:click="onOrder35" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[35].if_ok }}" custom-class="block" name="fade-up" duration="2100">
+      <van-icon size="2em" name="{{seat[35].src}}" bind:click="onOrder36" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[36].if_ok }}" custom-class="block" name="fade-up" duration="2300">
+      <van-icon size="2em" name="{{seat[36].src}}" bind:click="onOrder37" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[37].if_ok }}" custom-class="block" name="fade-up" duration="2300">
+      <van-icon size="2em" name="{{seat[37].src}}" bind:click="onOrder38" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[38].if_ok }}" custom-class="block" name="fade-up" duration="2300">
+      <van-icon size="2em" name="{{seat[38].src}}" bind:click="onOrder39" />
+    </van-transition>
+  </van-col>
+  <van-col offset="1" span="5">
+    <van-transition show="{{ seat[39].if_ok }}" custom-class="block" name="fade-up" duration="2300">
+      <van-icon size="2em" name="{{seat[39].src}}" bind:click="onOrder40"/>
+    </van-transition>
+  </van-col>
+
+<van-popup show="{{ show1 }}" bind:close="onClose" position="bottom">
+<view class="pop_a">
+  <van-panel title="{{seat_num}}" desc="{{remark}}" status="{{reservetime}}" use-footer-slot>
+    <view slot="footer">
+      <van-button size="small" bindtap='onCancel'>取消</van-button>
+      <van-button size="small" type="info" bindtap='onConfirm'>预定</van-button>
+    </view>
+  </van-panel>
+</view>
+</van-popup>

@@ -1,0 +1,57 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='opt'>
+  <van-row>
+    <van-col span="10">
+      <view class='span'>
+        <van-cell-group>
+          <van-field value="{{f_type}}" right-icon="arrow-down" disabled bind:click-icon="onClickIcon1" />
+        </van-cell-group>
+      </view>
+    </van-col>
+    <van-popup 
+      show="{{ show1 }}" 
+      position="top" 
+      bind:close="onClose"
+    >
+      <van-picker 
+        columns="{{ columns1 }}" 
+        show-toolbar 
+        bind:cancel="onCancel" 
+        bind:confirm="onConfirm1" 
+      />
+    </van-popup>
+    <van-col span="8">
+      <view class='span'>
+        <van-cell-group>
+          <van-field value="{{f_class}}" right-icon="arrow-down" disabled bind:click-icon="onClickIcon2" />
+        </van-cell-group>
+      </view>
+    </van-col>
+    <van-popup show="{{ show2 }}" position="top" bind:close="onClose">
+      <van-picker columns="{{ columns2 }}" show-toolbar bind:cancel="onCancel" bind:confirm="onConfirm2" />
+    </van-popup>
+    <van-col span="6">
+      <view class='span'>
+        <van-cell-group>
+          <van-field value="{{f_seat}}" right-icon="arrow-down" disabled bind:click-icon="onClickIcon3" />
+        </van-cell-group>
+      </view>
+    </van-col>
+    <van-popup show="{{ show3 }}" position="top" bind:close="onClose">
+      <van-picker columns="{{ columns3 }}" show-toolbar bind:cancel="onCancel" bind:confirm="onConfirm3" />
+    </van-popup>
+  </van-row>
+</view>
+<view class='theme'>
+  <van-cell-group>
+    <van-field value="{{ f_title }}" label="主题：" type="textarea" placeholder="请输入主题" autosize border="{{ false }}" bind:input="title_Input"/>
+  </van-cell-group>
+</view>
+<view class='content'>
+  <van-cell-group>
+    <van-field value="{{ f_content }}" type="textarea" placeholder="请输入反馈信息" autosize border="{{ false }}" bind:input="content_Input"/>
+  </van-cell-group>
+</view>
+<view class='btn'>
+  <van-button plain size="large" type="info" bind:click="submitFeedback">提交</van-button>
+</view>
