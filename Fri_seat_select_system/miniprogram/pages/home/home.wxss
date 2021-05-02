@@ -1,5 +1,0 @@
-/* pages/home/home.wxss */
-.time_opt{
-   background-color: #ffff;
-  font-size: 16px
-}

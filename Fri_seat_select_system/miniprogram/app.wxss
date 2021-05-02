@@ -1,5 +1,0 @@
-/**app.wxss**/
-
-.flex-wrp {
-  display: flex;
-}

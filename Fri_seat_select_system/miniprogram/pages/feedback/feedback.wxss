@@ -1,7 +1,0 @@
-/* pages/feedback/feedback.wxss */
-
-.btn {
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-}
